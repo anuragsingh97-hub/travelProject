@@ -1,0 +1,271 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Responsive Traveller Website</title> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=user_attributes" />
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <div class="container"> 
+        <nav> 
+        <div class="logo"> 
+            <h1>GoTrip</h1>
+        </div> 
+        <ul> 
+            <li><a href="">Home </a></li> 
+            <li><a href="#book">Book </a></li> 
+            <li><a href="#package">Package's </a></li> 
+            <li><a href="#place">Best Place </a></li> 
+            <li><a href="#contact"> Contact</a></li> 
+        </ul>  
+        <div class="icons">
+            <i id="user" class="material-symbols-outlined">user_attributes</i> 
+            <!-- <i id="user" class="material-symbols-outlined">menu</i>  -->
+        </div> 
+        </nav> 
+        <div class="main">     
+          <div class="maintext"> 
+            <h2> Best Vacation Destination<br> Your Holiday Dream</h1>
+            <a href="#place"><button>Explore</button></a>
+          </div>   
+        </div>
+        <div class="book" id="book"> 
+            <div class="head"> 
+                <h1> Book <span> Your Place</span></h1> 
+            </div> 
+            <div class="booking"> 
+                <img src="Images/hq720.jpg" alt=""> 
+              <div class="form"> 
+                <h2> Book Your Place Now</h2>  
+                <p>Where You Gone</p> 
+                <input type="text"  placeholder="where you Gone" id="placeName"> 
+                <p>Member's</p> 
+                <input type="number"  value="2"> 
+                <p>Journey Starts On</p> 
+                <input type="date"> 
+                <p>Where Ends On</p> 
+                <input type="date"> 
+                <button id="submit">Submit</button> 
+              </div>    
+            </div> 
+        </div> 
+        <div class="pack" id="package"> 
+            <div class="head"> 
+            <h1> Best <span>Packages</span></h1>     
+            </div> 
+            <div class="packages"> 
+                <div class="card"> 
+                    <img src="Images/photo 1.jpeg" alt=""> 
+                    <h3>Banaras</h3> 
+                    <p> 2 Week Tour</p> 
+                    <p>12,000 only</p> 
+                </div> 
+                <div class="card"> 
+                    <img src="Images/photo 2.jpeg" alt=""> 
+                    <h3>Manali</h3> 
+                    <p> 2 Week Tour</p> 
+                    <p>16,000 only</p> 
+                </div> 
+                <div class="card"> 
+                    <img src="Images/photo 3.jpg" alt="">
+                    <h3>Ladakh</h3> 
+                    <p> 2 Week Tour</p> 
+                    <p>15,000 only</p> 
+                </div> 
+            </div> 
+        </div> 
+        <div class="best" id="place"> 
+          <div class="head"> 
+           <h1> Explore <span> Best Places</span></h1>  
+        </div>  
+        <div class="places"> 
+          <div class="placecard"> 
+            <img onclick="goToPage()" src="Images/photo 4.jpeg" alt=""> 
+            <h3> Agra,India</h3> 
+            <p>184 kilometers</p> 
+            <p>₹10,812</p> 
+        </div>
+           
+          <div class="placecard"> 
+            <img src="Images/photo 5.jpg" alt=""> 
+            <h3> Jaipur,India</h3> 
+            <p>250 kilometers</p> 
+            <p>₹18,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 6.jpg" alt=""> 
+            <h3> Golden Temple,India</h3> 
+            <p>450 kilometers</p> 
+            <p>₹9,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 7.webp" alt=""> 
+            <h3>Goa,India</h3> 
+            <p>908 kilometers</p> 
+            <p>₹6,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 8.jpeg" alt=""> 
+            <h3> Amritsar,India</h3> 
+            <p>450 kilometers</p> 
+            <p>₹8,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 9.jpg" alt=""> 
+            <h3> Gulmarg,India</h3> 
+            <p>870 kilometers</p> 
+            <p>₹4,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 10.jpg" alt=""> 
+            <h3> Kerala,India</h3> 
+            <p>1300 kilometers</p> 
+            <p>₹5,812</p> 
+          </div>                                      
+          <div class="placecard"> 
+            <img src="Images/photo 11.jpg" alt=""> 
+            <h3> Visakhapatnam,India</h3> 
+            <p>2200 kilometers</p> 
+            <p>₹8,812</p> 
+          </div>        
+          <div class="placecard"> 
+            <img src="Images/photo 12.jpg" alt=""> 
+            <h3> Kanyakumari,India</h3> 
+            <p>2300 kilometers</p> 
+            <p>₹7,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 13.jpg" alt=""> 
+            <h3> Delhi,India</h3> 
+            <p>20 kilometers</p> 
+            <p>₹8,000</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 14.webp" alt=""> 
+            <h3> Red frot,India</h3> 
+            <p>15 kilometers</p> 
+            <p>₹7,000</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 15.jpg" alt=""> 
+            <h3> Lotus Temple,Delhi,India</h3> 
+            <p>8 kilometers</p> 
+            <p>₹8,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 16.jpg" alt=""> 
+            <h3> Humayun Tomb,India</h3> 
+            <p>13 kilometers</p> 
+            <p>₹4,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 17.jpg" alt=""> 
+            <h3> Akshardham,Delhi,India</h3> 
+            <p>8 kilometers</p> 
+            <p>₹8,812</p> 
+          </div>  
+          <div class="placecard"> 
+            <img src="Images/photo 18.jpg" alt=""> 
+            <h3> Kedarnath,India</h3> 
+            <p>250 kilometers</p> 
+            <p>₹9,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 19.png" alt=""> 
+            <h3> Jama Masjid,India</h3> 
+            <p>6 kilometers</p> 
+            <p>₹4,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 20.jpg" alt=""> 
+            <h3> Charminar,India</h3> 
+            <p>1600 kilometers</p> 
+            <p>₹10,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 21.jpg" alt=""> 
+            <h3> City Palace,India</h3> 
+            <p>250 kilometers</p> 
+            <p>₹13,812</p> 
+          </div> 
+          <div class="placecard"> 
+            <img src="Images/photo 22.jpg" alt=""> 
+            <h3> Leh,India</h3> 
+            <p>780 kilometers</p> 
+            <p>₹17,812</p> 
+          </div> 
+          <div class="placecard">                                                 
+            <img id="image1" src="Images/photo 23.jpg" alt=""> 
+            <h3> Kutubminar,India</h3> 
+            <p>20 kilometers</p> 
+            <p>₹22,812</p> 
+          </div> 
+          <div class="placecard">
+            <img id="clickable-image" src="Images/photo 24.webp" alt="Sample Image">
+            <div id="image-details" class="hidden">
+            <h3> Jammu and Kashmir,India</h3> 
+            <p>209 kilometers</p> 
+            <p>₹48,812</p>
+          </div>
+        </div>
+      </div> 
+  <div class="connect" id="contact"> 
+    <div class="head"> 
+      <h1>Contact <span>Us</span></h1> 
+    </div> 
+    <div class="Contactform"> 
+     <p>Name</p> 
+     <input type="text" placeholder=" Enter Name"> 
+     <p>Email</p> 
+     <input type="text" placeholder=" Enter Email"> <button id="conect" >Connect</button> 
+    </div>  
+  </div> 
+</div> 
+<div class="footer"> 
+ <div class="text"> 
+     <h3>About us </h3> 
+     <p>Welcome to <strong>Explore India Travel</strong><br>your trusted guide to discovering the beauty, culture,
+        and diversity of India. <br>From the snow-covered peaks of the Himalayas to the golden beaches of Goa,
+        from ancient temples to modern cities, <br>we bring you the best travel experiences India has to offer. <br>
+        <strong>Plan smart. Travel better. Explore India.</strong>
+        <br><br></p> 
+     <p></p> 
+     <p></p> 
+     <p></p> 
+ 
+ </div> 
+ <div class="text"> 
+     <h3>Tour</h3> 
+     <p>Quality</p> 
+     <p>Price</p> 
+     <p>Afortable</p> 
+     <p>Change</p> 
+    </div> 
+    <div class="text"> 
+        <h3>Travel</h3> 
+        <p>Good Home</p> 
+        <p>Good</p> 
+        <p>Quality</p> 
+        <p>Price</p> 
+    
+    </div> 
+    <div class="text"> 
+        <h3>Address</h3> 
+        <p>Mob No.+91 993616****</p> 
+        <p>Noida</p> 
+        <p>G.B Nagar</p> 
+        <p>Uttar Pradesh</p> 
+    
+    </div> 
+</div> 
+<div class="loginpage"> 
+<input type="text" placeholder="Enter Email" id="email"><br> 
+<input type="password" placeholder="Enter password" id="pass"><br> 
+<button id="loginBtn"> Log In</button> 
+</div> 
+    </div> 
+    <script src="aks.js"></script> 
+</body> 
+</html>        
