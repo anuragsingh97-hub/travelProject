@@ -2,18 +2,21 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100%;
     width: 100%;
     background:#ffffff;
-    margin-top: 100px;
+    margin-top: 10px;
 }
-h1{
+#ag{
     display:flex;
     justify-content:center;
     align-items:center;
     height:100%;
     width: 100%;
-    font-size:80px;
+    font-size:40px;
+}
+h6{
+    margin-top: 100px;
+    padding-right: 15px;
 }
 p{
     margin: 80px;
@@ -24,11 +27,11 @@ p{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:80%;
-    width: 80%;
-    margin-left: 150px;
+    height:50%;
+    width: 50%;
+    margin-left: 370px;
     border-radius:20px;
-    box-shadow: 30 0 0px rgb(90, 88, 88);
+    box-shadow: 30 30 0px rgb(0, 0, 0);
     
 }
 .slider{

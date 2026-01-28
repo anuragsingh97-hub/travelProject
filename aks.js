@@ -65,3 +65,18 @@ setInterval(()=>{
     nextSlide();
 }, 3000); // 3 seconds
 
+const modal = document.getElementById("modal");
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
+
+function openModal() {
+  modal.classList.add("show");
+  console.log("shfdsiuhefiu");
+}
+
+function closeModal() {
+  modal.classList.remove("show");
+}
+
+openBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
