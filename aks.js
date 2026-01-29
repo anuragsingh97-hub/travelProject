@@ -35,48 +35,55 @@ connect.addEventListener("click",function(){
   function goToPage() {
     window.location.href = "agra.html";
   }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const modal = document.getElementById("modal");
+  const openBtn = document.getElementById("openBtn");
+  const closeBtn = document.getElementById("closeBtn");
+
+  function openModal() {
+    modal.classList.add("show");
+    console.log("modal opened");
+  }
+
+  function closeModal() {
+    modal.classList.remove("show");
+  }
+
+  openBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+
+});
+
+
 // about agra page
-let index = 0;
-const slides = document.querySelector(".slides");
-const total = document.querySelectorAll(".slide").length;
+// let index = 0;
+// const slides = document.querySelector(".slides");
+// const total = document.querySelectorAll(".slide").length;
 
-function showSlide(){
-    slides.style.transform = `translateX(-${index * 800}px)`;
-}
+// function showSlide(){
+//     slides.style.transform = `translateX(-${index * 800}px)`;
+// }
 
-function nextSlide(){
-    index++;
-    if(index >= total){
-        index = 0;
-    }
-    showSlide();
-}
+// function nextSlide(){
+//     index++;
+//     if(index >= total){
+//         index = 0;
+//     }
+//     showSlide();
+// }
 
-function prevSlide(){
-    index--;
-    if(index < 0){
-        index = total - 1;
-    }
-    showSlide();
-}
+// function prevSlide(){
+//     index--;
+//     if(index < 0){
+//         index = total - 1;
+//     }
+//     showSlide();
+// }
 
-/* Auto Slide */
-setInterval(()=>{
-    nextSlide();
-}, 3000); // 3 seconds
+// /* Auto Slide */
+// setInterval(()=>{
+//     nextSlide();
+// }, 3000); // 3 seconds
 
-const modal = document.getElementById("modal");
-const openBtn = document.getElementById("openBtn");
-const closeBtn = document.getElementById("closeBtn");
-
-function openModal() {
-  modal.classList.add("show");
-  console.log("shfdsiuhefiu");
-}
-
-function closeModal() {
-  modal.classList.remove("show");
-}
-
-openBtn.addEventListener("click", openModal);
-closeBtn.addEventListener("click", closeModal);
