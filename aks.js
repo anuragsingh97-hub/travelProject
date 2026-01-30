@@ -55,35 +55,3 @@ document.addEventListener("DOMContentLoaded", function () {
   closeBtn.addEventListener("click", closeModal);
 
 });
-
-
-// about agra page
-// let index = 0;
-// const slides = document.querySelector(".slides");
-// const total = document.querySelectorAll(".slide").length;
-
-// function showSlide(){
-//     slides.style.transform = `translateX(-${index * 800}px)`;
-// }
-
-// function nextSlide(){
-//     index++;
-//     if(index >= total){
-//         index = 0;
-//     }
-//     showSlide();
-// }
-
-// function prevSlide(){
-//     index--;
-//     if(index < 0){
-//         index = total - 1;
-//     }
-//     showSlide();
-// }
-
-// /* Auto Slide */
-// setInterval(()=>{
-//     nextSlide();
-// }, 3000); // 3 seconds
-
