@@ -1,3 +1,4 @@
+
 let user = document.getElementById("user"); 
 let loginBtn = document.getElementById("loginBtn"); 
 let placeName = document.getElementById("placeName"); 
@@ -36,22 +37,32 @@ connect.addEventListener("click",function(){
     window.location.href = "agra.html";
   }
 
-document.addEventListener("DOMContentLoaded", function () {
+const modal = document.querySelector("#modal");
+const openBtn = document.querySelector("#openBtn");
+const closeBtn = document.querySelector("#closeBtn");
 
-  const modal = document.getElementById("modal");
-  const openBtn = document.getElementById("openBtn");
-  const closeBtn = document.getElementById("closeBtn");
+function openModal() {
+  modal.classList.add("show");
+  console.log("njfanisjf");
+}
 
-  function openModal() {
-    modal.classList.add("show");
-    console.log("modal opened");
+function closeModal() {
+  modal.classList.remove("show");
+}
+
+openBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+
+/* Close when clicking outside modal box */
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    closeModal();
   }
+});
 
-  function closeModal() {
-    modal.classList.remove("show");
+/* Close on ESC key */
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeModal();
   }
-
-  openBtn.addEventListener("click", openModal);
-  closeBtn.addEventListener("click", closeModal);
-
 });
